@@ -11,26 +11,29 @@ import XCTest
 
 class OpenWeatherMapSDKTests: XCTestCase {
     
+    var sdk: OpenWeatherMapSDK!
+    
     override func setUp() {
+        
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        self.sdk = OpenWeatherMapSDK(appKey: "1234")
     }
     
     override func tearDown() {
+        
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
+        self.sdk = nil
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
+    func testSDKInstantiation() {
+        
+        XCTAssert(self.sdk != nil, "sdk cannot be nil")
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock() {
-            // Put the code you want to measure the time of here.
-        }
+    func testSDKapiKey() {
+        
+        XCTAssert(self.sdk.appKey == "1234", "sdk api key must comply")
     }
-    
 }
