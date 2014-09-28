@@ -56,3 +56,14 @@ func searchByCircleTask(latitude:Double, longitude: Double, radius:Double, compl
 ```swift
 func searchByIdListTask(cityIds:[String], completion:CompletionHandler) -> NSURLSessionDataTask
 ```
+
+Contact
+----
+
+http://www.crsantos.info ([@crsantos](http://www.twitter.com/crsantos))
+
+
+License
+----
+
+OpenWeatherSDK is available under the MIT license.
