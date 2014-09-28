@@ -25,6 +25,8 @@
 		DD4340DC19D7779000D968E6 /* Wind.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4340DA19D7779000D968E6 /* Wind.swift */; };
 		DD4340DE19D7789600D968E6 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4340DD19D7789600D968E6 /* Environment.swift */; };
 		DD4340DF19D7789600D968E6 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4340DD19D7789600D968E6 /* Environment.swift */; };
+		DD4340E119D81F5100D968E6 /* Wind+Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4340E019D81F5100D968E6 /* Wind+Parser.swift */; };
+		DD4340E219D81F5100D968E6 /* Wind+Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4340E019D81F5100D968E6 /* Wind+Parser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,7 @@
 		DD4340D719D7770F00D968E6 /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		DD4340DA19D7779000D968E6 /* Wind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wind.swift; sourceTree = "<group>"; };
 		DD4340DD19D7789600D968E6 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		DD4340E019D81F5100D968E6 /* Wind+Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Wind+Parser.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +136,7 @@
 				DD4340D419D7764000D968E6 /* Weather.swift */,
 				DD4340D719D7770F00D968E6 /* City.swift */,
 				DD4340DA19D7779000D968E6 /* Wind.swift */,
+				DD4340E019D81F5100D968E6 /* Wind+Parser.swift */,
 				DD4340DD19D7789600D968E6 /* Environment.swift */,
 			);
 			path = Models;
@@ -259,6 +263,7 @@
 				DD4340D819D7770F00D968E6 /* City.swift in Sources */,
 				DD4340CA19D715B000D968E6 /* NSURLRequest+SearchExtensions.swift in Sources */,
 				DD4340D219D775D500D968E6 /* Coordinate.swift in Sources */,
+				DD4340E119D81F5100D968E6 /* Wind+Parser.swift in Sources */,
 				DD4340D519D7764000D968E6 /* Weather.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,6 +278,7 @@
 				DD4340CB19D715B000D968E6 /* NSURLRequest+SearchExtensions.swift in Sources */,
 				DD4340DF19D7789600D968E6 /* Environment.swift in Sources */,
 				DD4340D619D7764000D968E6 /* Weather.swift in Sources */,
+				DD4340E219D81F5100D968E6 /* Wind+Parser.swift in Sources */,
 				DD4340D319D775D500D968E6 /* Coordinate.swift in Sources */,
 				DD4340D919D7770F00D968E6 /* City.swift in Sources */,
 				DD4340DC19D7779000D968E6 /* Wind.swift in Sources */,

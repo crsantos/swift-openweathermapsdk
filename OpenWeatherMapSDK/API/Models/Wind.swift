@@ -12,4 +12,10 @@ class Wind {
     
     var speed:Double!
     var deg:Double!
+    
+    init(speed:Double, deg:Double){
+        
+        self.speed = speed;
+        self.deg   = deg;
+    }
 }
