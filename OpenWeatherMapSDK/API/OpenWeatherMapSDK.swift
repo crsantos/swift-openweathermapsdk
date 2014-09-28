@@ -37,6 +37,8 @@ public class OpenWeatherMapSDK {
     
     public var unitSystem: UnitSystem!
     
+    // MARK: - Object lifecycle
+    
     public convenience init(appKey: String!) {
         
         self.init(appKey: appKey, unitSystem: .Metric)
