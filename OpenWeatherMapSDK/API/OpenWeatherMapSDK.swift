@@ -25,7 +25,7 @@ public class OpenWeatherMapSDK {
     
     public enum UnitSystem: String {
         
-        case Metric = "metric"
+        case Metric   = "metric"
         case Imperial = "imperial"
     }
     
@@ -188,11 +188,11 @@ public class OpenWeatherMapSDK {
     
     :returns: a new NSDictionary with the json object
     */
-    func parseJSON(inputData: NSData) -> NSDictionary{
+    func parseJSON(inputData: NSData) -> Dictionary<String, AnyObject> {
 
-        var parsedJSON: NSDictionary?
+        var parsedJSON: Dictionary<String, AnyObject>?
         var jsonError: NSError?
-        let json = NSJSONSerialization.JSONObjectWithData(inputData, options: nil, error: &jsonError) as NSDictionary
+        let json = NSJSONSerialization.JSONObjectWithData(inputData, options: nil, error: &jsonError) as Dictionary<String, AnyObject>;
         
         if let unwrappedError = jsonError {
             
