@@ -17,39 +17,39 @@ public extension NSURLRequest {
     
     // MARK: - Search by name
     
-    public class func searchByNameRequest(name:NSString) -> NSURLRequest {
+    public class func searchByNameRequest(name:NSString, unitSystem: OpenWeatherMapSDK.UnitSystem = OpenWeatherMapSDK.UnitSystem.Metric) -> NSURLRequest {
         
-        var url = NSURL(scheme: API_SCHEME, host: API_ENDPOINT, path: "/weather?q=\(name)&units=metric")
+        var url = NSURL(scheme: API_SCHEME, host: API_ENDPOINT, path: "/weather?q=\(name)&units=\(unitSystem)")
         return NSURLRequest(URL: url)
     }
     
     // MARK: - Search by city id
     
-    public class func searchByIdRequest(id:String) -> NSURLRequest {
+    public class func searchByIdRequest(id:String, unitSystem: OpenWeatherMapSDK.UnitSystem = OpenWeatherMapSDK.UnitSystem.Metric) -> NSURLRequest {
         
-        var url = NSURL(scheme: API_SCHEME, host: API_ENDPOINT, path: "/weather?id=\(id)&units=metric")
+        var url = NSURL(scheme: API_SCHEME, host: API_ENDPOINT, path: "/weather?id=\(id)&units=\(unitSystem)")
         return NSURLRequest(URL: url)
     }
     
     // MARK: - Search by coordinates
     
-    public class func searchByCoordinatesRequest(latitude:Double, longitude: Double) -> NSURLRequest {
+    public class func searchByCoordinatesRequest(latitude:Double, longitude: Double, unitSystem: OpenWeatherMapSDK.UnitSystem = OpenWeatherMapSDK.UnitSystem.Metric) -> NSURLRequest {
         
-        var url = NSURL(scheme: API_SCHEME, host: API_ENDPOINT, path: "/weather?lat=\(latitude)&lon=\(longitude)&units=metric")
+        var url = NSURL(scheme: API_SCHEME, host: API_ENDPOINT, path: "/weather?lat=\(latitude)&lon=\(longitude)&units=\(unitSystem)")
         return NSURLRequest(URL: url)
     }
     
     // MARK: - Search by bounding box
     
-    public class func searchByBoundingBoxRequest(latitudeA:Double, longitudeA: Double, latitudeB:Double, longitudeB: Double, zoom:Double) -> NSURLRequest {
+    public class func searchByBoundingBoxRequest(latitudeA:Double, longitudeA: Double, latitudeB:Double, longitudeB: Double, zoom:Double, unitSystem: OpenWeatherMapSDK.UnitSystem = OpenWeatherMapSDK.UnitSystem.Metric) -> NSURLRequest {
     
-        var url = NSURL(scheme: API_SCHEME, host: API_ENDPOINT, path: "/find/city?bbox=\(latitudeA),\(longitudeA),\(latitudeB),\(longitudeA),\(zoom)&cluster=yes&units=metric")
+        var url = NSURL(scheme: API_SCHEME, host: API_ENDPOINT, path: "/find/city?bbox=\(latitudeA),\(longitudeA),\(latitudeB),\(longitudeA),\(zoom)&cluster=yes&units=\(unitSystem)")
         return NSURLRequest(URL: url)
     }
     
     // MARK: - Search by radius
     
-    public class func searchByCircleRequest(latitude:Double, longitude: Double, radius:Double) -> NSURLRequest {
+    public class func searchByCircleRequest(latitude:Double, longitude: Double, radius:Double, unitSystem: OpenWeatherMapSDK.UnitSystem = OpenWeatherMapSDK.UnitSystem.Metric) -> NSURLRequest {
         
         var url = NSURL(scheme: API_SCHEME, host: API_ENDPOINT, path: "/find/city?lat=\(latitude)&lon=\(longitude)&cnt\(radius)&units=metric")
         return NSURLRequest(URL: url)
@@ -57,10 +57,10 @@ public extension NSURLRequest {
     
     // MARK: - Bulk city search by ID
     
-    public class func searchByIdListRequest(cityIds:[String]) -> NSURLRequest {
+    public class func searchByIdListRequest(cityIds:[String], unitSystem: OpenWeatherMapSDK.UnitSystem = OpenWeatherMapSDK.UnitSystem.Metric) -> NSURLRequest {
         
         var listOfIds = ",".join(cityIds)
-        var url = NSURL(scheme: API_SCHEME, host: API_ENDPOINT, path: "/group?id=\(listOfIds)&units=metric")
+        var url = NSURL(scheme: API_SCHEME, host: API_ENDPOINT, path: "/group?id=\(listOfIds)&units=\(unitSystem)")
         return NSURLRequest(URL: url)
     }
 }
