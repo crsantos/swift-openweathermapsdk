@@ -23,13 +23,26 @@ public typealias CompletionHandler = (obj:AnyObject?, success:Bool?) -> Void
 */
 public class OpenWeatherMapSDK {
     
+    public enum UnitSystem: String {
+        
+        case Metric = "metric"
+        case Imperial = "imperial"
+    }
+    
     /// API key to configure SDK
     public var appKey:String!
     
     /// Brief ref to the shared session
     public var session: NSURLSession!
     
-    public init(appKey: String!){
+    public var unitSystem: UnitSystem!
+    
+    public convenience init(appKey: String!) {
+        
+        self.init(appKey: appKey, unitSystem: .Metric)
+    }
+    
+    public init(appKey: String!, unitSystem: UnitSystem!){
         
         AssertString(appKey)
         
