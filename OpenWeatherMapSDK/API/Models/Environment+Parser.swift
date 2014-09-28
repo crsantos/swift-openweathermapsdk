@@ -19,7 +19,6 @@ extension Environment {
         let temp       = NSString(string: dict["temp"]!).doubleValue
         let temp_max   = NSString(string: dict["temp_max"]!).doubleValue
         let temp_min   = NSString(string: dict["temp_min"]!).doubleValue
-
         
         return Environment(grnd_level: grnd_level, humidity: humidity, pressure: pressure, sea_level: sea_level, temp: temp, temp_max: temp_max, temp_min: temp_min)
     }

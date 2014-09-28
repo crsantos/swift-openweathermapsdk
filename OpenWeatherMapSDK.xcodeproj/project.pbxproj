@@ -135,13 +135,13 @@
 		DD4340C419D7140900D968E6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				DD4340D119D775D500D968E6 /* Coordinate.swift */,
-				DD4340D419D7764000D968E6 /* Weather.swift */,
 				DD4340D719D7770F00D968E6 /* City.swift */,
-				DD4340DA19D7779000D968E6 /* Wind.swift */,
-				DD4340E019D81F5100D968E6 /* Wind+Parser.swift */,
+				DD4340D119D775D500D968E6 /* Coordinate.swift */,
 				DD4340DD19D7789600D968E6 /* Environment.swift */,
 				DD4340E319D8664900D968E6 /* Environment+Parser.swift */,
+				DD4340D419D7764000D968E6 /* Weather.swift */,
+				DD4340DA19D7779000D968E6 /* Wind.swift */,
+				DD4340E019D81F5100D968E6 /* Wind+Parser.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
