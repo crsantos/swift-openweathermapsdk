@@ -8,8 +8,6 @@
 
 import Foundation
 
-// TODO: metric/imperial units must be configurable
-
 /**
 *  @brief  Extension that gathers all Search methods supported on SDK
 */
