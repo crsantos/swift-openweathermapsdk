@@ -12,7 +12,7 @@ public class City {
     
     var name:           String!
     var cod:            String!
-    var coordinates:    Coordinate!
+    var coordinates:    Coordinates!
     var weather:        Weather!
     var wind:           Wind!
     var environment:    Environment!
@@ -21,4 +21,24 @@ public class City {
     var sunset_time:    NSDate!
     var id:             Int!
     var type:           Int!
+    
+    enum CityType {
+        
+        case One, Two
+    }
+    
+    init(name: String, cod: String, coordinates: Coordinates, weather: Weather, wind: Wind, environment: Environment, country: String, sunrise_time: NSDate, sunset_time: NSDate, id: Int, type:  Int){
+
+        self.name         = name
+        self.cod          = cod
+        self.coordinates  = coordinates
+        self.weather      = weather
+        self.wind         = wind
+        self.environment  = environment
+        self.country      = country
+        self.sunrise_time = sunrise_time
+        self.sunset_time  = sunset_time
+        self.id           = id
+        self.type         = type
+    }
 }

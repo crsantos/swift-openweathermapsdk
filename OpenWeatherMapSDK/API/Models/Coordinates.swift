@@ -1,5 +1,5 @@
 //
-//  Coordinate.swift
+//  Coordinates.swift
 //  OpenWeatherMapSDK
 //
 //  Created by Carlos Santos on 27/09/14.
@@ -8,8 +8,7 @@
 
 import Foundation
 
-
-public class Coordinate {
+public class Coordinates {
     
     var latitude:Double!
     var longitude:Double!
