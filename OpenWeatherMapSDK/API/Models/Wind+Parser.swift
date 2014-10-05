@@ -10,11 +10,10 @@ import Foundation
 
 extension Wind {
 
-    class func parseFromDictionary(dict: [String: String]) -> Wind {
-     
-        // TODO: is there an easier way?
-        let speed = NSString(string: dict["speed"]!).doubleValue
-        let deg   = NSString(string: dict["deg"]!).doubleValue
+    class func parseFromDictionary(dict: [String: AnyObject]) -> Wind {
+        
+        let speed = dict["speed"]! as Double
+        let deg   = dict["deg"]! as Double
         
         return Wind(speed: speed, deg: deg)
     }

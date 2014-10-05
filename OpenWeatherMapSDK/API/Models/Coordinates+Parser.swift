@@ -10,11 +10,21 @@ import Foundation
 
 extension Coordinates {
     
-    class func parseFromDictionary(dict: [String: String]) -> Coordinates {
+    class func parseFromDictionary(dict: [String: AnyObject]) -> Coordinates {
         
-        let latitude  = NSString(string: dict["latitude"]!).doubleValue
-        let longitude = NSString(string: dict["longitude"]!).doubleValue
+        var lat:Double!
+        var lon:Double!
         
-        return Coordinates(latitude: latitude, longitude: longitude)
+        if let latValue = dict["lat"]! as? Double {
+            
+            lat = latValue
+        }
+        
+        if let lonValue = dict["lon"]! as? Double {
+            
+            lon = lonValue
+        }
+        
+        return Coordinates(latitude: lat, longitude: lon)
     }
 }

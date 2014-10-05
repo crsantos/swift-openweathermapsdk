@@ -10,7 +10,7 @@ import Foundation
 
 public class Weather {
     
-    var id:String!
+    var id:Int!
     var main:String!
     var description:String!
     var icon:String!
@@ -26,7 +26,7 @@ public class Weather {
 //        13d.png  	13n.png  	snow
 //        50d.png  	50n.png  	mist
     
-    init(id:String, main:String, description:String, icon:String){
+    init(id:Int, main:String, description:String, icon:String){
 
         self.id          = id
         self.main        = main

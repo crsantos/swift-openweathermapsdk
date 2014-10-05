@@ -11,7 +11,7 @@ import Foundation
 public class City {
     
     var name:           String!
-    var cod:            String!
+    var cod:            Int!
     var coordinates:    Coordinates!
     var weather:        Weather!
     var wind:           Wind!
@@ -27,7 +27,7 @@ public class City {
         case One, Two
     }
     
-    init(name: String, cod: String, coordinates: Coordinates, weather: Weather, wind: Wind, environment: Environment, country: String, sunrise_time: NSDate, sunset_time: NSDate, id: Int, type:  Int){
+    init(name: String, cod: Int, coordinates: Coordinates, weather: Weather, wind: Wind, environment: Environment, country: String, sunrise_time: NSDate, sunset_time: NSDate, id: Int, type:  Int){
 
         self.name         = name
         self.cod          = cod
