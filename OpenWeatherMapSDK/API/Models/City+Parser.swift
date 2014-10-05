@@ -63,8 +63,6 @@ extension City {
             var sunriseTimestamp:Double!
             var sunsetStringTimestamp:Double!
             
-            println("sysDict => \(sysDict)")
-            
             if let sunriseTimestamp = sysDict["sunrise"]! as? Double {
             
                 sunrise_time = NSDate(timeIntervalSince1970: sunriseTimestamp)
