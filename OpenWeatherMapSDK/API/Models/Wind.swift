@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Wind {
+public class Wind {
     
     var speed:Double!
     var deg:Double!

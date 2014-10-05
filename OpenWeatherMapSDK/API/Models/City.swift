@@ -10,17 +10,17 @@ import Foundation
 
 public class City {
     
-    var name:           String!
-    var cod:            Int!
-    var coordinates:    Coordinates!
-    var weather:        Weather!
-    var wind:           Wind!
-    var environment:    Environment!
-    var country:        String!
-    var sunrise_time:   NSDate!
-    var sunset_time:    NSDate!
-    var id:             Int!
-    var type:           Int!
+    public var name:           String!
+    public var cod:            Int!
+    public var coordinates:    Coordinates!
+    public var weather:        Weather!
+    public var wind:           Wind!
+    public var environment:    Environment!
+    public var country:        String!
+    public var sunrise_time:   NSDate!
+    public var sunset_time:    NSDate!
+    public var id:             Int!
+    public var type:           Int!
     
     enum CityType {
         
