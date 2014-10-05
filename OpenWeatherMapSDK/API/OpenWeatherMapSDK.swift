@@ -167,12 +167,20 @@ public class OpenWeatherMapSDK {
             
             if (error == nil) { // evaluate response
                 
-                let dict: Dictionary<String,AnyObject> = self.parseJSON(data) as Dictionary<String,AnyObject> 
-                completion(obj:City.parseFromDictionary(dict), success:true)
+                let dict: Dictionary<String,AnyObject> = self.parseJSON(data) as Dictionary<String,AnyObject>
+                let city = City.parseFromDictionary(dict)
+                
+                dispatch_async(dispatch_get_main_queue()) {
+                    
+                    completion(obj:city, success:true)
+                }
                 
             } else {
                 
-                completion(obj:nil, success:false)
+                dispatch_async(dispatch_get_main_queue()) {
+                    
+                    completion(obj:nil, success:false)
+                }
             }
         });
         
