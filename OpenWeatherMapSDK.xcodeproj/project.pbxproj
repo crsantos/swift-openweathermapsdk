@@ -35,6 +35,8 @@
 		DD4340EB19D86FF800D968E6 /* City+Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4340E919D86FF800D968E6 /* City+Parser.swift */; };
 		DD4340ED19D8763300D968E6 /* Coordinates+Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4340EC19D8763300D968E6 /* Coordinates+Parser.swift */; };
 		DD4340EE19D8763300D968E6 /* Coordinates+Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4340EC19D8763300D968E6 /* Coordinates+Parser.swift */; };
+		DD6F823819E46C11007B41DB /* NSURLRequest+ForecastExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6F823719E46C11007B41DB /* NSURLRequest+ForecastExtentions.swift */; };
+		DD6F823919E46C11007B41DB /* NSURLRequest+ForecastExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6F823719E46C11007B41DB /* NSURLRequest+ForecastExtentions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +59,7 @@
 		DD4340E619D86F6D00D968E6 /* Weather+Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Weather+Parser.swift"; sourceTree = "<group>"; };
 		DD4340E919D86FF800D968E6 /* City+Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "City+Parser.swift"; sourceTree = "<group>"; };
 		DD4340EC19D8763300D968E6 /* Coordinates+Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Coordinates+Parser.swift"; sourceTree = "<group>"; };
+		DD6F823719E46C11007B41DB /* NSURLRequest+ForecastExtentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSURLRequest+ForecastExtentions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				DD4340C919D715B000D968E6 /* NSURLRequest+SearchExtensions.swift */,
+				DD6F823719E46C11007B41DB /* NSURLRequest+ForecastExtentions.swift */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -280,6 +284,7 @@
 				DD4340E719D86F6D00D968E6 /* Weather+Parser.swift in Sources */,
 				DD4340D819D7770F00D968E6 /* City.swift in Sources */,
 				DD4340CA19D715B000D968E6 /* NSURLRequest+SearchExtensions.swift in Sources */,
+				DD6F823819E46C11007B41DB /* NSURLRequest+ForecastExtentions.swift in Sources */,
 				DD4340E419D8664900D968E6 /* Environment+Parser.swift in Sources */,
 				DD4340D219D775D500D968E6 /* Coordinates.swift in Sources */,
 				DD4340EA19D86FF800D968E6 /* City+Parser.swift in Sources */,
@@ -296,6 +301,7 @@
 				DD4340E519D8664900D968E6 /* Environment+Parser.swift in Sources */,
 				DD43405819D70FEA00D968E6 /* OpenWeatherMapSDKTests.swift in Sources */,
 				DD4340CE19D73F9900D968E6 /* OpenWeatherMapSDK.swift in Sources */,
+				DD6F823919E46C11007B41DB /* NSURLRequest+ForecastExtentions.swift in Sources */,
 				DD4340CB19D715B000D968E6 /* NSURLRequest+SearchExtensions.swift in Sources */,
 				DD4340DF19D7789600D968E6 /* Environment.swift in Sources */,
 				DD4340D619D7764000D968E6 /* Weather.swift in Sources */,
