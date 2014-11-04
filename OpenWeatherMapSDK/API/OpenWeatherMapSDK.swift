@@ -46,13 +46,15 @@ public class OpenWeatherMapSDK {
     
     public init(appKey: String!, unitSystem: UnitSystem!){
         
-        AssertString(appKey)
+        assert(appKey != nil)
         
         self.appKey = appKey
         self.session = NSURLSession(configuration: NSURLSessionConfiguration.defaultSessionConfiguration())
     }
     
     // MARK: - Public
+    
+    // MARK: Search
     
     /**
     Fetches the weather for the provided text search
@@ -147,6 +149,39 @@ public class OpenWeatherMapSDK {
     public func searchByIdListTask(cityIds:[String], completion:CompletionHandler) -> NSURLSessionDataTask {
         
         var request = NSURLRequest.searchByIdListRequest(cityIds)
+        
+        return self.taskForRequest(request, completion: completion)
+    }
+    
+    /**
+    Fetches the weather for the provided text search
+    
+    :param: name       the text to search: i.e.: "Lisbon,pt"
+    :param: completion the callback closure
+    
+    :returns: a new task that can be canceled
+    */
+    public func forecastByNameTask(name: String, completion:CompletionHandler) -> NSURLSessionDataTask {
+        
+        var request = NSURLRequest.forecastByNameRequest(name)
+        
+        return self.taskForRequest(request, completion: completion)
+    }
+    
+    // MARK: Forecast
+    
+    /**
+    Fetches the weather for the provided coordinates
+    
+    :param: latitude       the latitude to search: 26.123123
+    :param: longitude      the longitude to search: 4.123123
+    :param: completion     the callback closure
+    
+    :returns: a new task that can be canceled
+    */
+    public func forecastByCoordinatesTask(latitude: Double, longitude: Double, completion:CompletionHandler) -> NSURLSessionDataTask {
+        
+        var request = NSURLRequest.forecastByCoordinatesRequest(latitude, longitude: longitude)
         
         return self.taskForRequest(request, completion: completion)
     }
