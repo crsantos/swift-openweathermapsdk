@@ -22,7 +22,7 @@ public extension NSURLRequest {
     */
     public class func forecastByNameRequest(cityName:NSString, unitSystem: OpenWeatherMapSDK.UnitSystem = OpenWeatherMapSDK.UnitSystem.Metric) -> NSURLRequest {
         
-        var url = NSURL(scheme: API_SCHEME, host: API_ENDPOINT, path: "/forecast?q=\(cityName)&units=\(unitSystem)")
+        var url:NSURL! = NSURL(scheme: API_SCHEME, host: API_ENDPOINT, path: "/forecast?q=\(cityName)&units=\(unitSystem)")
         return NSURLRequest(URL: url)
     }
     
@@ -38,7 +38,7 @@ public extension NSURLRequest {
     */
     public class func forecastByCoordinatesRequest(latitude:Double, longitude: Double, unitSystem: OpenWeatherMapSDK.UnitSystem = OpenWeatherMapSDK.UnitSystem.Metric) -> NSURLRequest {
         
-        var url = NSURL(scheme: API_SCHEME, host: API_ENDPOINT, path: "/forecast?lat=\(latitude)&lon=\(longitude)&units=\(unitSystem)")
+        var url:NSURL! = NSURL(scheme: API_SCHEME, host: API_ENDPOINT, path: "/forecast?lat=\(latitude)&lon=\(longitude)&units=\(unitSystem)")
         return NSURLRequest(URL: url)
     }
     
@@ -54,7 +54,7 @@ public extension NSURLRequest {
     */
     public class func forecastByIdRequest(id:String, unitSystem: OpenWeatherMapSDK.UnitSystem = OpenWeatherMapSDK.UnitSystem.Metric) -> NSURLRequest {
         
-        var url = NSURL(scheme: API_SCHEME, host: API_ENDPOINT, path: "/forecast?id=\(id)&units=\(unitSystem)")
+        var url:NSURL! = NSURL(scheme: API_SCHEME, host: API_ENDPOINT, path: "/forecast?id=\(id)&units=\(unitSystem)")
         return NSURLRequest(URL: url)
     }
     
@@ -70,7 +70,7 @@ public extension NSURLRequest {
     */
     public class func dailyForecastByNameRequest(cityName:NSString, unitSystem: OpenWeatherMapSDK.UnitSystem = OpenWeatherMapSDK.UnitSystem.Metric) -> NSURLRequest {
         
-        var url = NSURL(scheme: API_SCHEME, host: API_ENDPOINT, path: "/forecast/daily?q=\(cityName)&units=\(unitSystem)")
+        var url:NSURL! = NSURL(scheme: API_SCHEME, host: API_ENDPOINT, path: "/forecast/daily?q=\(cityName)&units=\(unitSystem)")
         return NSURLRequest(URL: url)
     }
     
@@ -87,7 +87,7 @@ public extension NSURLRequest {
     */
     public class func dailyForecastByCoordinatesRequest(latitude:Double, longitude: Double, unitSystem: OpenWeatherMapSDK.UnitSystem = OpenWeatherMapSDK.UnitSystem.Metric) -> NSURLRequest {
         
-        var url = NSURL(scheme: API_SCHEME, host: API_ENDPOINT, path: "/forecast/daily?lat=\(latitude)&lon=\(longitude)&units=\(unitSystem)")
+        var url:NSURL! = NSURL(scheme: API_SCHEME, host: API_ENDPOINT, path: "/forecast/daily?lat=\(latitude)&lon=\(longitude)&units=\(unitSystem)")
         return NSURLRequest(URL: url)
     }
     
@@ -104,7 +104,7 @@ public extension NSURLRequest {
     */
     public class func dailyForecastIdRequest(id:String, unitSystem: OpenWeatherMapSDK.UnitSystem = OpenWeatherMapSDK.UnitSystem.Metric) -> NSURLRequest {
         
-        var url = NSURL(scheme: API_SCHEME, host: API_ENDPOINT, path: "/forecast/daily?id=\(id)&units=\(unitSystem)")
+        var url:NSURL! = NSURL(scheme: API_SCHEME, host: API_ENDPOINT, path: "/forecast/daily?id=\(id)&units=\(unitSystem)")
         return NSURLRequest(URL: url)
     }
 }
