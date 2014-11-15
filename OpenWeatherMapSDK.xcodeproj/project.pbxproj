@@ -37,6 +37,7 @@
 		DD4340EE19D8763300D968E6 /* Coordinates+Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4340EC19D8763300D968E6 /* Coordinates+Parser.swift */; };
 		DD6F823819E46C11007B41DB /* NSURLRequest+ForecastExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6F823719E46C11007B41DB /* NSURLRequest+ForecastExtentions.swift */; };
 		DD6F823919E46C11007B41DB /* NSURLRequest+ForecastExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6F823719E46C11007B41DB /* NSURLRequest+ForecastExtentions.swift */; };
+		DDDDD0581A17DBB700B1B900 /* NSData+Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDDD0571A17DBB700B1B900 /* NSData+Parser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		DD4340E919D86FF800D968E6 /* City+Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "City+Parser.swift"; sourceTree = "<group>"; };
 		DD4340EC19D8763300D968E6 /* Coordinates+Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Coordinates+Parser.swift"; sourceTree = "<group>"; };
 		DD6F823719E46C11007B41DB /* NSURLRequest+ForecastExtentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSURLRequest+ForecastExtentions.swift"; sourceTree = "<group>"; };
+		DDDDD0571A17DBB700B1B900 /* NSData+Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSData+Parser.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				DD4340C419D7140900D968E6 /* Models */,
+				DDDDD0561A17DB9A00B1B900 /* Parser */,
 				DD4340C819D7145E00D968E6 /* Requests */,
 				DD43406219D7102D00D968E6 /* OWMAPIConstants.swift */,
 				DD4340CC19D73F9900D968E6 /* OpenWeatherMapSDK.swift */,
@@ -168,6 +171,14 @@
 				DD6F823719E46C11007B41DB /* NSURLRequest+ForecastExtentions.swift */,
 			);
 			path = Requests;
+			sourceTree = "<group>";
+		};
+		DDDDD0561A17DB9A00B1B900 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				DDDDD0571A17DBB700B1B900 /* NSData+Parser.swift */,
+			);
+			path = Parser;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,6 +297,7 @@
 				DD4340CA19D715B000D968E6 /* NSURLRequest+SearchExtensions.swift in Sources */,
 				DD6F823819E46C11007B41DB /* NSURLRequest+ForecastExtentions.swift in Sources */,
 				DD4340E419D8664900D968E6 /* Environment+Parser.swift in Sources */,
+				DDDDD0581A17DBB700B1B900 /* NSData+Parser.swift in Sources */,
 				DD4340D219D775D500D968E6 /* Coordinates.swift in Sources */,
 				DD4340EA19D86FF800D968E6 /* City+Parser.swift in Sources */,
 				DD4340E119D81F5100D968E6 /* Wind+Parser.swift in Sources */,

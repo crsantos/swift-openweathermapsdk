@@ -202,7 +202,7 @@ public class OpenWeatherMapSDK {
             
             if (error == nil) { // evaluate response
                 
-                let dict: Dictionary<String,AnyObject> = self.parseJSON(data) as Dictionary<String,AnyObject>
+                let dict: Dictionary<String,AnyObject> = data.parse() as Dictionary<String,AnyObject>
                 let city = City.parseFromDictionary(dict)
                 
                 dispatch_async(dispatch_get_main_queue()) {
@@ -222,33 +222,5 @@ public class OpenWeatherMapSDK {
         task.resume()
         
         return task
-    }
-    
-    /**
-    Helper method to parse JSON Dictionary from NSData object
-    
-    :param: inputData the NSData object
-    
-    :returns: a new NSDictionary with the json object
-    */
-    func parseJSON(inputData: NSData) -> Dictionary<String,AnyObject> {
-
-        println("JSON: \(NSString(data: inputData, encoding: NSUTF8StringEncoding))")
-        var parsedJSON: NSDictionary?
-        var jsonError: NSError?
-        
-        let jsonOptional: AnyObject! = NSJSONSerialization.JSONObjectWithData(inputData, options: NSJSONReadingOptions(0), error: &jsonError)
-        
-        if let json = jsonOptional as? Dictionary<String, AnyObject> {
-        
-            println("After parse: \(json)")
-            parsedJSON = json as Dictionary
-            
-        } else {
-            
-            println("json error unwrapping")
-        }
-        
-        return parsedJSON! as Dictionary
     }
 }
